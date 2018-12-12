@@ -53,6 +53,8 @@ int main(void) {
 				//从符号栈和状态栈栈顶弹出A->B |B|长度的符号
 				symbelStack.pop();
 				stateStack.pop();
+				if (reduceby.at(2+i) == 'n') 	//F->num
+					i += 2;
 			}
 			k = stateStack.top();		//获得当前状态栈栈顶元素
 			char A = reduceby.at(0);

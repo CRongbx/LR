@@ -1,0 +1,7 @@
+F->num
+T->F
+E->T
+F->num
+T->F
+E->E+T
+SUCCESS!
